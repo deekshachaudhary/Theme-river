@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title>Theme River</title>
+    </head>
+    <body>
+        <script src="https://d3js.org/d3.v4.js"></script>  
+        <script src = "themeRiver.js"></script>
+        <script>
+            stackedbar("ratings.csv");
+        </script>
+    
+        <style>
+            .rect {
+                width: 20px;
+                height: 600px;
+            }
+
+            div.tooltip {
+                position: absolute;
+                text-align: left;
+                width: 100px;
+                height: 50px;
+                padding: 10px;
+                font: 10px sans-serif;
+                background: lightblue;
+                border: 0px;
+                border-radius: 8px;
+                pointer-events: none;
+            }
+
+            .axis {
+                fill: none;
+                stroke: black;
+                stroke-width: 2px;
+            }
+            
+            div.dashboard {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 250px;
+                height: 200px;
+                padding: 20px;
+                font: 10px sans-serif;
+                background:white;
+                border: 1px solid black;
+                border-radius: 8px;
+                pointer-events: none;
+            
+            }
+            
+        </style>
+
+    </body>
+</html>
+    
